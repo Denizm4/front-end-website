@@ -1,0 +1,261 @@
+h1{
+    font-family: 'Oswald';
+    font-size: 48px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+h2{
+     font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+
+    color: #464547;
+
+}
+
+.headline1 p{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.headline2 p{
+    color: #666666;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+.btn1{
+    background-color: #55C2D8;
+    border-radius: 18px;
+    display: flex;
+    padding: 10px;
+    margin: 50px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    border-color: #55C2D8;
+}
+
+
+h3{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.headline3e p{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.ellipse{
+    background-color: #39C2D7;
+    border-radius: 50%;
+    color: aliceblue;
+    width: 145px;
+    height: 143.47px;
+    margin: 0 auto;
+}
+
+.footerleft{
+    display: flex;
+    width: 25%;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 5%;
+}
+
+address{
+    width: 35%;
+}
+
+.footerright{
+    vertical-align:bottom;
+}
+@keyframes LogoAnimation{
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: rotateY(180deg) scale(1.5) ;
+    }
+
+    100%{
+        transform: rotateY(180deg) scale(normal);
+    }
+}
+
+
+#LOGO:hover{
+    animation: LogoAnimation 3s ease-in-out 0s forwards;
+}
+
+@keyframes ButtonAnimation{
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform-origin: left;
+        transform: skewY(25deg);
+    }
+
+    100%{
+        transform-origin: left;
+    }
+}
+
+
+.btn1:hover{
+    animation: ButtonAnimation 2s ease-in-out 0s;
+}
+
+@keyframes PlayAnimation {
+    0%{
+        transform: none;
+    }
+
+    50%{
+        background-color: white;
+        color: #39C2D7;
+        width: 125px;
+        height: 123.47px;   
+    }
+
+    100%{
+        background-color: #39C2D7;
+        color: white;
+        width: 145px;
+        height: 143.47px;
+    }
+}
+
+.ellipse:hover{
+    animation: PlayAnimation 2s ease-in-out 0s ;
+}
+
+@keyframes bubbles {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.star1{
+    background-image: url(./assets/Stars.svg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 842px;
+    width: 100%;
+    top: -76px;
+    left: 204px;
+    animation: bubbles 3s ease-in-out 0s  infinite;
+} 
+
+
+@keyframes bubbles2 {
+    0%{
+        opacity: 0;
+    }
+
+    45%{
+        opacity: 1;
+    }
+    65%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}
+
+.star2{
+    background-image: url(./assets/Rays.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -25px;
+    left: 370px;
+    min-height: 842px;
+    width: 100%;
+    animation: bubbles2 3s ease-in-out 0s infinite;
+}
+
+
+
+
+@media (max-width: 770px) {
+    header{
+        width: 100vw;
+        background-image: url(./assets/Desktop_Backgrounds_2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        flex-shrink: 1;
+    }
+
+    .star1{
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        flex-shrink: 1;
+    }
+
+    .star2{
+        background-position: right;
+        top: 17px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        flex-shrink: 1;
+    }
+
+    bubbles{
+        background-position: right;
+    }
+}

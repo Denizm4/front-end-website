@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    height: 25vh;
+}
+
+header {
+    background-image: url(./assets/Desktop_Backgrounds_1920x1200_6\ 3.png);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    align-items:center;
+    padding: 30px 0;
+    width: 100%;
+    height: 75vh;
+    box-sizing: border-box;
+}
+
+nav {
+    padding-left: 257px;
+    padding-right: 5%;
+    display: flex;
+    list-style: none;
+}
+
+nav > span {
+    margin-right: 165px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+.nav li a{
+    transition: all 0.3s ease 0s;
+    color: aliceblue;
+    margin-left: 4rem;
+}
+
+.nav li a:hover{
+    color: rgb(127, 117, 180);
+}
+
+.headline1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+}
+
+.headline2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+}
+
+.headline2 > h2 {
+    margin-bottom: 39px;
+}
+
+.headline2 > h2 + p {
+    margin-bottom: 35px;
+}
+
+.same{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.headline3{
+    padding: 5%;
+    background-image: url(./assets/IMG_1334_72dpi_RGB_\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.headline3 .white {
+    font-size: 68px;
+    margin-top: 33px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+
+
+footer{
+    background: #464547;
+    display: flex;
+    flex-direction: row;  
+    clear: both; 
+    max-width: 1200px;
+    min-width: 199px;
+    margin: auto;
+}
+
+footer address {
+    padding-top: 39px;
+    color: #fff;
+}
+
+.footerright {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
